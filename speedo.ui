@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Speedo</class>
+ <widget class="QWidget" name="Speedo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Speedo</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>63</width>
+     <height>227</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="labelsLayout">
+    <property name="spacing">
+     <number>30</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="speedLabel">
+      <property name="text">
+       <string>Speed</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="rotations">
+      <property name="text">
+       <string>Time</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="voltageLabel">
+      <property name="text">
+       <string>Voltage</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="intensityLabel">
+      <property name="text">
+       <string>Intensity</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="power">
+      <property name="text">
+       <string>Power</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>66</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="lcdLayout">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <item>
+     <widget class="QLCDNumber" name="lcdSpeed"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdTime"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdVoltage"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdIntensity"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdPower"/>
+    </item>
+   </layout>
+  </widget>
+  <zorder>rotations</zorder>
+  <zorder>power</zorder>
+  <zorder>lcdTime</zorder>
+  <zorder>lcdVoltage</zorder>
+  <zorder>lcdIntensity</zorder>
+  <zorder>lcdPower</zorder>
+  <zorder>voltageLabel</zorder>
+  <zorder>intensityLabel</zorder>
+  <zorder>speedLabel</zorder>
+  <zorder>lcdSpeed</zorder>
+  <zorder>power</zorder>
+  <zorder>intensityLabel</zorder>
+  <zorder></zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
